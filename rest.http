@@ -1,0 +1,32 @@
+@urlDev = http://localhost:8801
+
+POST {{urlDev}}/sign-up
+Content-Type: application/json
+
+{
+    "email": "sangsang2810@gmail.com",
+    "password": "2810982322",
+    "lastName": "281098",
+    "firstName": "281098"
+}
+###
+POST {{urlDev}}/sign-in
+Content-Type: application/json
+
+{
+    "email": "sangsang2810@gmail.com",
+    "password": "2810982322"
+}
+
+###
+POST {{urlDev}}/sign-out
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJpYXQiOjE2Nzk5OTI0NzUsImV4cCI6MTY3OTk5NjA3NX0.DiNvd3l9c3iA3wUskS4xV9dWdEOSUsPChvN48_7SURw
+
+###
+POST {{urlDev}}/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJpYXQiOjE2Nzk5OTM1MTYsImV4cCI6MTY4MjU4NTUxNn0.hPo2ga9QBML6fcGcGIQhF1Pk6uR8mnblv9kDJgUgHgY"
+}
